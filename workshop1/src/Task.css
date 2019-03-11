@@ -1,0 +1,7 @@
+.task {
+    margin: 10px;
+    padding: 5px 10px;
+    border: 1px solid #545454;
+    border-radius: 10px;
+    display: inline-block;
+}

@@ -1,25 +1,38 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './Header';
+import Tasks from './Tasks';
+
+const dummyTaskData = [
+  {
+      title: "Slow down",
+      description: "Please don't go so fast"
+  },
+  {
+      title: "Learn at Ada",
+      description: "do some react"
+  },
+  {
+      title: "Go to the pub", 
+      description: "Have a couple beers"
+  },
+  {
+      title: "Do camerons work",
+      description: "do the work for that lazy git"
+  }
+];
 
 class App extends Component {
   render() {
+    let tasks = dummyTaskData.map(task => {
+      return (
+        <Tasks title={task.title} description={task.description} />
+      )
+    })
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Header />
+        <div className="tasks">{tasks}</div>
       </div>
     );
   }
