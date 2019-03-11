@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './Header';
 import Task from './Task';
+import FunctionalTask from './FunctionalTask';
 
 const dummyTaskData = [
   {
@@ -10,7 +11,7 @@ const dummyTaskData = [
   },
   {
       title: "Learn at Ada",
-      description: "do some react"
+      description: "Do some react"
   },
   {
       title: "Go to the pub", 
@@ -18,13 +19,13 @@ const dummyTaskData = [
   },
   {
       title: "Do camerons work",
-      description: "do the work for that lazy git"
+      description: "Do the work for that lazy git"
   }
 ];
 
 class App extends Component {
   render() {
-    let tasks = dummyTaskData.map(task => <Task title={task.title} description={task.description} />);
+    let tasks = dummyTaskData.map(task => <FunctionalTask title={task.title} description={task.description} />);
     return (
       <div className="App">
         <Header />
