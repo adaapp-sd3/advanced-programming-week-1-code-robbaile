@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Header from './Header';
-import Tasks from './Tasks';
+import Task from './Task';
 
 const dummyTaskData = [
   {
@@ -24,11 +24,7 @@ const dummyTaskData = [
 
 class App extends Component {
   render() {
-    let tasks = dummyTaskData.map(task => {
-      return (
-        <Tasks title={task.title} description={task.description} />
-      )
-    })
+    let tasks = dummyTaskData.map(task => <Task title={task.title} description={task.description} />);
     return (
       <div className="App">
         <Header />
