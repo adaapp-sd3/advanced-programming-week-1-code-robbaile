@@ -1,8 +1,21 @@
-.task {
+.task__false {
     margin: 10px;
     padding: 5px 10px;
-    border: 1px solid #545454;
+    border: 2px solid #545454;
     border-radius: 10px;
     display: inline-block;
     background-color: #FFF;
+}
+
+.task__true {
+    border: 2px solid #1dd1a1;
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: inline-block;
+    background-color: #FFF;
+}
+
+.p-accepted {
+    display: inline;
 }
