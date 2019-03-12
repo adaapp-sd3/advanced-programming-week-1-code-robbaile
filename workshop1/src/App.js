@@ -20,7 +20,11 @@ const dummyTaskData = [
   {
       title: "Do camerons work",
       description: "Do the work for that lazy git"
-  }
+  },
+  {
+    title: "Do work",
+    description: "Do some work"
+}
 ];
 
 class App extends Component {
@@ -29,7 +33,10 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <div className="tasks">{tasks}</div>
+        <div className="tasks-wrapper">
+          <div className="tasks-container">{tasks}</div>
+        </div>
+        
       </div>
     );
   }

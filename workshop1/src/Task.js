@@ -18,7 +18,7 @@ class Task extends Component {
 
   render() {
     return (
-    <div className={`task__${this.state.isAccepted}`}>
+    <div className={`task task__${this.state.isAccepted}`}>
         <h2 className="task__title">Task: {this.props.title}</h2>
         <p className="task__body">Description: {this.props.description}</p>
         <p>Check to accept task</p><input type="checkbox" onClick={this.handleAcceptTask}></input>

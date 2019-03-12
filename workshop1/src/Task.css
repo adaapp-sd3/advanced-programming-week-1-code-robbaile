@@ -1,21 +1,52 @@
-.task__false {
+.task {
+    width: 300px;
     margin: 10px;
     padding: 5px 10px;
-    border: 2px solid #545454;
     border-radius: 10px;
     display: inline-block;
     background-color: #FFF;
+}
+
+.task__false {
+    border: 2px solid #ff6b6b;
 }
 
 .task__true {
     border: 2px solid #1dd1a1;
-    margin: 10px;
-    padding: 5px 10px;
-    border-radius: 10px;
-    display: inline-block;
-    background-color: #FFF;
 }
 
 .p-accepted {
     display: inline;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+}
+
+.circle {
+    margin-right: 10px; 
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+.circle__true {
+    border: #1dd1a1 3px solid;
+}
+
+.circle__false {
+    border: #ff6b6b 3px solid;
+}
+
+.task__heading {
+    margin: 5px;
+}
+
+.task__description {
+    margin: 0;
+}
+
+input:hover {
+    cursor: pointer;
 }
