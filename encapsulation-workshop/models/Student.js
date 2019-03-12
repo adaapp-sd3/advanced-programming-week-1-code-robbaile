@@ -1,7 +1,7 @@
 class Student {
-    constructor(name, year, form) {
+    constructor(name, form) {
         this.name = name;
-        this.year = year;
+        this.year = parseInt(form);
         this.form = form;
     }
 
