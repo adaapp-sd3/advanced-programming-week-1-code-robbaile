@@ -4,6 +4,13 @@ class YearGroup {
         this.head = head;
     }
 
+    getYear() {
+        return this.year;
+    }
+
+    getHead() {
+        return this.head;
+    }
 }
 
 module.exports = YearGroup

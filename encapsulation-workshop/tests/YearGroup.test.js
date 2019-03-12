@@ -16,7 +16,7 @@ describe("YearGroup class tests", () => {
         expect(myYearGroup.head).to.be.string("EW");
     });
     it('should return the year and head initials', () => {
-        expect(myYearGroup.getYear).to.eql(11);
-        expect(myYearGroup.getHead).to.eql("EW");
+        expect(myYearGroup.getYear()).to.eql(11);
+        expect(myYearGroup.getHead()).to.eql("EW");
     })
 });
