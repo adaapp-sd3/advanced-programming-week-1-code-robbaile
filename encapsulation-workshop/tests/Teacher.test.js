@@ -17,4 +17,14 @@ describe('Teacher tests', () => {
         expect(newTeacher.subject).to.equal("Economics");
         expect(newTeacher.initials).to.equal("EW");
     });
-})
+    it('should run the getter methods on teacher class', () => {
+        expect(newTeacher.getName()).to.equal("Emma Willis");
+        expect(newTeacher.getYearsTeaching()).to.equal(14);
+        expect(newTeacher.getSubject()).to.equal("Economics");
+        expect(newTeacher.getInitials()).to.equal("EW");
+    });
+    it('should run the setter methods on teacher class', () => {
+        newTeacher.setYearsTeaching(15)
+        expect(newTeacher.getYearsTeaching()).to.equal(15)
+    });
+});
