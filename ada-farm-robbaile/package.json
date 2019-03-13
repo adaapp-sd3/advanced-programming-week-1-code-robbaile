@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "start": "serve",
-    "test": "mocha"
+    "test": "mocha tests/"
   },
   "author": "Ali Blackwell",
   "license": "ISC",
   "dependencies": {
     "chai": "^4.2.0",
     "mocha": "^6.0.2",
+    "p5": "^0.7.3",
     "serve": "^10.1.2"
   }
 }

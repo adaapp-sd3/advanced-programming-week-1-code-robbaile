@@ -63,7 +63,5 @@ function setActiveFieldFromFarmerPosition() {
             activeField = field
             farmer.setActiveField(field)
         }
-        
-        
     }
 }
